@@ -13,7 +13,7 @@ use strict;
 use Apache::Constants ':common';
 use File::Temp q(tempfile);
 
-$Apache::Authen::Program::VERSION = '0.91';
+$Apache::Authen::Program::VERSION = '0.92';
 
 
 sub handler {
@@ -200,6 +200,16 @@ If you are using this module please let me know, I'm curious how many
 people there are that need this type of functionality.
 
 This module was adapted from Apache::AuthenSmb.
+
+=head1 DESIGN NOTES
+
+This module trades off speed for flexibility -- it is not 
+recommended for use when you need to process lots of
+authentications/minute, as each authentication requires
+a fork().  As any program can be used for the authenticator
+(even programs you don't have the source for),
+this module does give you great flexibility
+(as said before, at the expense of sub-maximal speed).
 
 =head1 AUTHOR
 

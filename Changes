@@ -1,5 +1,9 @@
 Revision history for Perl extension Apache::AuthenProgram.
 
+0.92  Wed Mar 26 21:17:50 2003
+	- Updated PREREQ in Makefile.PL for Apache::Constants.
+    - Added DESIGN NOTES to POD on speed vs. flexibility.
+
 0.91  Fri Nov  8 13:38:17 2002
 	- Apache::AuthenProgram -> Apache::Authen::Program.
 	- Used h2xs for CPAN modlist-compatible Makefile.PL.
