@@ -1,7 +1,7 @@
 # Apache::Authen::Program allows you to call an external program
 # that performs username/password authentication in Apache.
 #
-# Copyright (c) November 8, 2002 Mark Leighton Fisher, Thomson Inc.
+# Copyright (c) 2002-2004 Mark Leighton Fisher, Fisher's Creek Consulting, LLC
 # 
 # This module is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
@@ -13,7 +13,7 @@ use strict;
 use Apache::Constants ':common';
 use File::Temp q(tempfile);
 
-$Apache::Authen::Program::VERSION = '0.92';
+$Apache::Authen::Program::VERSION = '0.93';
 
 
 sub handler {
@@ -213,11 +213,12 @@ this module does give you great flexibility
 
 =head1 AUTHOR
 
-Mark Leighton Fisher <fisherm@tce.com>
+Mark Leighton Fisher <mark-fisher@fisherscreek.com>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2002 Mark Leighton Fisher, Thomson multimedia Inc.
+Copyright (c) 2002-2004 Mark Leighton Fisher, 
+Fisher's Creek Consulting, LLC.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
